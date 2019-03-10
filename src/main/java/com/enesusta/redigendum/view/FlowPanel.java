@@ -27,7 +27,7 @@ public class FlowPanel extends JPanel {
         buttons[1] = new JButton("1");
         buttons[2] = new JButton("2");
 
-        
+
     }
 
     public void addComponents() {
