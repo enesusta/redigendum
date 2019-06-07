@@ -6,15 +6,51 @@
     <version>0.0.1</version>
     <packaging>jar</packaging>
 
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<org.springframework.version>5.1.6.RELEASE</org.springframework.version>
+	</properties>
 
 <dependencies>
 
-
-	
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-beans</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-jdbc</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-web</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-orm</artifactId>
+		<version>${org.springframework.version}</version>
+	</dependency>
 	<dependency>
 	    <groupId>com.dropbox.core</groupId>
     	<artifactId>dropbox-core-sdk</artifactId>
 	   	<version>3.0.11</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>5.1.6.RELEASE</version>
 	</dependency>
 
 </dependencies>
@@ -76,12 +112,4 @@
 
 
 
-
-
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
 </project>
