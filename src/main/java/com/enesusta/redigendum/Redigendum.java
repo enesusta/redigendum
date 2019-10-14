@@ -1,6 +1,6 @@
 package com.enesusta.redigendum;
 
-import com.enesusta.redigendum.controller.components.Frame;
+import com.enesusta.redigendum.components.Frame;
 
 import javax.swing.*;
 import java.awt.*;
