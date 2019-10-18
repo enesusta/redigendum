@@ -8,6 +8,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Service
 public final class DefaultExecutorService implements ExecutorService {
@@ -30,9 +32,15 @@ public final class DefaultExecutorService implements ExecutorService {
             InputStreamReader isr = new InputStreamReader(is);
             BufferedReader br = new BufferedReader(isr);
 
+            final Pattern pattern = Pattern.compile("\\d+\\.\\d%");
             String str;
             byte counter = (byte) 0;
             while ((str = br.readLine()) != null) {
+
+                Matcher matcher = pattern.matcher(str);
+                while (matcher.find())
+                    System.out.println(matcher.group());
+
                 System.out.println(str);
             }
 
